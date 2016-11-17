@@ -1,4 +1,3 @@
-
 #1 Write a loop that prints out the numbers 20 to 10
 
 x = range(10,21)
@@ -21,4 +20,7 @@ for i in range(0,11):
 #4 Write a list comprehension that return only even number from 20 to 10
 
 listEven = [y[i] for i in range(0,11) if y[i] % 2 == 0]
+
+# Write a function that determines in a number is a prime number
+
 
