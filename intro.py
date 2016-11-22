@@ -21,17 +21,6 @@ for i,each in enumerate(x):
 
 #5. Write a function that determines if a number is a prime number
 
-#just trying to be clever
-#def prime(n):
- #   x = range(n-1,1,-1)
-  #  if n == 1:
-   #     print "One isn't a prime number, dude"
-    #for i in x:
-     #   if x % i == 0:
-      #      print 'not a prime number, brah'
-    #else:
-     #   print 'dood dis a prime number'
-
 def prime(n):
     m = range(n-1,1,-1)
     if n == 1:
@@ -42,7 +31,6 @@ def prime(n):
         print "DIS NOT PRIME, FOOL"
     else: 
         print str(n) + " be prime, yo"
-
 
 #6. Write a function that loads a text file, loops over the lines in it, and
 # prints out the fifth character of the fifth line of that file
