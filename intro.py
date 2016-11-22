@@ -1,23 +1,23 @@
 #1. Write a loop that prints out the numbers 20 to 10
 
-x = range(20, 10, -1)
+x = range(20, 9, -1)
 
-for i in range(0,11):
+for i,each in enumerate(x):
     print(x[i])
 
 #2. Write a list comprehension that returns the numbers from 20 to 10
 
-listy = [x[i] for i in range(0,11)]
+[x[i] for i,each in enumerate(x)]
 
 #3. Write a loop that prints out only even numbers from 20 to 10
 
-for i in range(0,11):
-    if x[i] % 2 == 0:
-        print(x[i])
+for i,each in enumerate(x):
+    if each % 2 == 0:
+        print(each)
 
 #4. Write a list comprehension that return only even number from 20 to 10
 
-listEven = [x[i] for i in range(0,11) if x[i] % 2 == 0]
+[each for i,each in enumerate(x) if each % 2 == 0]
 
 #5. Write a function that determines if a number is a prime number
 
@@ -33,11 +33,16 @@ listEven = [x[i] for i in range(0,11) if x[i] % 2 == 0]
      #   print 'dood dis a prime number'
 
 def prime(n):
-  #  for i in range(n-1,1,-1):
+    m = range(n-1,1,-1)
     if n == 1:
-        print "One isn't a prime number, dude"
-    elif n % (n-1) == 0:
-        print "DIS NOT PRIME"
+        print "1 isn't a prime number, dude"
+    elif n == 2:
+        print "2 be prime, yo"
+    elif [each for i,each in enumerate(m) if n % m[i] == 0]:
+        print "DIS NOT PRIME, FOOL"
+    else: 
+        print str(n) + " be prime, yo"
+
 
 #6. Write a function that loads a text file, loops over the lines in it, and
 # prints out the fifth character of the fifth line of that file
