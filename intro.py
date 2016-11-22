@@ -1,10 +1,9 @@
 #1. Write a loop that prints out the numbers 20 to 10
 
-x = range(10,21)
-y = sorted(x, reverse=True)
+x = sorted(range(10,21), reverse=True)
 
 for i in range(0,11):
-    print(y[i])
+    print(x[i])
 
 #2. Write a list comprehension that returns the numbers from 20 to 10
 
@@ -27,7 +26,6 @@ def prime(x):
         print "One isn't a prime number, dude"
     for i in range(x,2);
         if i % 2
-
 
 #6. Write a function that loads a text file, loops over the lines in it, and
 # prints out the fifth character of the fifth line of that file
