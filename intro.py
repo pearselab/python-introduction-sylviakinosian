@@ -24,25 +24,34 @@ for i,each in enumerate(x):
 def prime(n):
     m = range(n-1,1,-1)
     if n == 1:
-        print "1 isn't a prime number, dude"
+        return False #"1 isn't a prime number, dude"
     elif n == 2:
-        print "2 be prime, yo"
+        return True #"2 be prime, yo"
     elif [each for i,each in enumerate(m) if n % m[i] == 0]:
-        print "DIS NOT PRIME, FOOL"
+        return False #"DIS NOT PRIME, FOOL"
     else: 
-        print str(n) + " be prime, yo"
+        return True #str(n) + " be prime, yo"
 
 #6. Write a function that loads a text file, loops over the lines in it, and
 # prints out the fifth character of the fifth line of that file
 
-with open("name of file") as handle:
-    for line in handle:
-        do something
+with open('silvermoon.txt') as f:
+    for i, line in enumerate(f):
+        if i == 4:
+            print line[4]
 
-#7. Write a loop that prints out the numbers from 1 to 20, printing "
+#7. Write a loop that prints out the numbers from 1 to 20, printing "Good:
+# NUMBER" if divisible by 5 and "Job: NUMBER" if the number is prime, and
+# nothing otherwise
 
-def factorial(x):
-    if x == 1:
-        return(x)
-    return 
+a = range(1,21)
+
+for i,each in enumerate(a):
+    if each % 5 == 0:
+        print 'Good: ' + str(each)
+    elif prime(each) is True:
+        print 'Job: ' + str(each)
+
+# figure out how to get 5 to print for Job
+    
 
