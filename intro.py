@@ -54,4 +54,25 @@ for i,each in enumerate(a):
 
 # figure out how to get 5 to print for Job
     
+#8. Write a function that calculates population size using the Gompertz curve
 
+import math
+
+def gomp(a, b, c, t):
+    pop = a * math.exp(-b * math.exp(-c * t))
+    return pop
+
+#9. Write a function that draws a box of specified width and height
+
+def box(w,h):
+    print '*'*h
+    for i in range(0,h-1):
+        print '*' + ' '*(w-2) + '*'
+    print '*'*h
+
+#10. Implement a point class that holds x and y information for a point
+
+#11. Write a distance method that calculates the distnace between two points in space
+
+#12. Implement a line class that takes two point objects and makes a line
+# between them
