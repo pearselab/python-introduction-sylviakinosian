@@ -59,7 +59,7 @@ for i,each in enumerate(a):
 import math
 
 def gomp(a, b, c, t):
-    pop = a * math.exp(-b * math.exp(-c * t))
+    pop = a * exp(-b * exp(-c * t))
     return pop
 
 #9. Write a function that draws a box of specified width and height
@@ -72,7 +72,31 @@ def box(w,h):
 
 #10. Implement a point class that holds x and y information for a point
 
-#11. Write a distance method that calculates the distnace between two points in space
+class point:
+    def __init__(self, x, y):
+        self.x, self.y = x, y
+
+point1 = point(5,4)
+
+#11. Write a distance method that calculates the distance between two points in space
+
+from math import sqrt
+
+point2 = point(3,7)
+
+def dist(p1, p2):
+    d = sqrt((p2.x - p1.x)**2 + (p2.y - p1.y)**2)
+    return d
 
 #12. Implement a line class that takes two point objects and makes a line
 # between them
+
+class line:
+    def __init__(self, x1, y1, x2, y2):
+        self.x1, self.y1, self.x2, self.y2 = x1, y1, x2, y2
+    p1 = (self.x1, self.y1)
+    p2 = (self.x2, self.y2)
+    def draw(p1, p2):
+        d = sqrt((p2[0] - p1[0])**2 + (p2[1] - p1[1])**2)
+        print 'The distance between ' + str(point1) + ' and ' + str(point2) + ' is ' + str(d)
+
