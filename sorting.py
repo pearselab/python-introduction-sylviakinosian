@@ -1,5 +1,6 @@
-# read through the handout for all things
-#bubble sort
+#my very own bubble sort
+
+
 
 #quicksort
 

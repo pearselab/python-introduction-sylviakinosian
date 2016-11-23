@@ -24,13 +24,13 @@ for i,each in enumerate(x):
 def prime(n):
     m = range(n-1,1,-1)
     if n == 1:
-        return False #"1 isn't a prime number, dude"
+        return False
     elif n == 2:
-        return True #"2 be prime, yo"
+        return True
     elif [each for i,each in enumerate(m) if n % m[i] == 0]:
-        return False #"DIS NOT PRIME, FOOL"
+        return False
     else: 
-        return True #str(n) + " be prime, yo"
+        return True
 
 #6. Write a function that loads a text file, loops over the lines in it, and
 # prints out the fifth character of the fifth line of that file
@@ -47,10 +47,15 @@ with open('silvermoon.txt') as f:
 a = range(1,21)
 
 for i,each in enumerate(a):
-    if each % 5 == 0:
+    if prime(each) is True and each % 5 == 0:
         print 'Good: ' + str(each)
-    elif prime(each) is True:
         print 'Job: ' + str(each)
+    elif prime(each) is True:
+        print 'Good: ' + str(each)
+    elif each % 5 == 0:
+        print 'Job: ' + str(each)
+    else:
+        continue
 
 # figure out how to get 5 to print for Job
     
