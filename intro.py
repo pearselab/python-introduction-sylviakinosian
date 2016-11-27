@@ -97,11 +97,10 @@ def dist(p1, p2):
 # between them
 
 class line:
-    def __init__(self, x1, y1, x2, y2):
-        self.x1, self.y1, self.x2, self.y2 = x1, y1, x2, y2
-    p1 = (self.x1, self.y1)
-    p2 = (self.x2, self.y2)
-    def draw(p1, p2):
+    def __init__(self, p1, p2):
+        self.p1, self.p2, = p1, p2
+
+    def dist(p1, p2):
         d = sqrt((p2[0] - p1[0])**2 + (p2[1] - p1[1])**2)
-        print 'The distance between ' + str(point1) + ' and ' + str(point2) + ' is ' + str(d)
+        print 'The distance between these two points is ' + str(d)
 
