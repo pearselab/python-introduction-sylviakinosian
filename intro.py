@@ -91,6 +91,8 @@ def dist(p1, p2):
     d = sqrt((p2.x - p1.x)**2 + (p2.y - p1.y)**2)
     return d
 
+dist(point1, point2)
+
 #12. Implement a line class that takes two point objects and makes a line
 # between them
 
@@ -102,4 +104,6 @@ class line:
         d = sqrt((self.p2.x - self.p1.x)**2 + (self.p2.y - self.p1.y)**2)
         #print 'The distance between these two points is ' + str(d)
         return d
+
+line1 = line(point1, point2)
 
