@@ -10,7 +10,8 @@ def bubz(list):
                 list[i], list[i+1] = list[i+1], list[i]
     return list
 
-#quicksort
+#Quicksort
+#issues with list indexing
 
 def quicksort(list):
     bottom = list[0]
@@ -22,20 +23,18 @@ def quicksort(list):
     #end if
 #end function
 
-def swap(x, y):
-    x, y = y, x
-    return x, y
-
+#do we care about picking a median value for the pivot .. ?
 def partition(list, bottom, top):
     pivot = top
     x = bottom
     for i in range(0, len(list)):
         if list[i] < pivot:
-            swap(list[i], list[x])
+            list[i], list[x] = list[x], list[i]
             x = x + 1
         #end if
     #end for
     return x
 #end function
+
 
 

@@ -56,8 +56,6 @@ for i,each in enumerate(a):
         print 'Job: ' + str(each)
     else:
         continue
-
-# figure out how to get 5 to print for Job
     
 #8. Write a function that calculates population size using the Gompertz curve
 
@@ -100,7 +98,8 @@ class line:
     def __init__(self, p1, p2):
         self.p1, self.p2, = p1, p2
 
-    def dist(p1, p2):
-        d = sqrt((p2[0] - p1[0])**2 + (p2[1] - p1[1])**2)
-        print 'The distance between these two points is ' + str(d)
+    def dist():
+        d = sqrt((self.p2.x - self.p1.x)**2 + (self.p2.y - self.p1.y)**2)
+        #print 'The distance between these two points is ' + str(d)
+        return d
 
